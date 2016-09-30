@@ -15,6 +15,8 @@
 		65A56CA01D9EF2290090DA35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65A56C9E1D9EF2290090DA35 /* LaunchScreen.storyboard */; };
 		65A56CAB1D9EF2290090DA35 /* RunTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A56CAA1D9EF2290090DA35 /* RunTests.swift */; };
 		65A56CB61D9EF2290090DA35 /* RunUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A56CB51D9EF2290090DA35 /* RunUITests.swift */; };
+		65A56CC51D9EF2700090DA35 /* BDCoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A56CC41D9EF2700090DA35 /* BDCoreDataStack.swift */; };
+		65A56CC71D9EF5670090DA35 /* TestBDCoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A56CC61D9EF5670090DA35 /* TestBDCoreDataStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		65A56CB11D9EF2290090DA35 /* RunUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RunUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65A56CB51D9EF2290090DA35 /* RunUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunUITests.swift; sourceTree = "<group>"; };
 		65A56CB71D9EF2290090DA35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65A56CC41D9EF2700090DA35 /* BDCoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BDCoreDataStack.swift; sourceTree = "<group>"; };
+		65A56CC61D9EF5670090DA35 /* TestBDCoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestBDCoreDataStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 		65A56C911D9EF2290090DA35 /* Run */ = {
 			isa = PBXGroup;
 			children = (
+				65A56CC31D9EF2610090DA35 /* BDLib */,
 				65A56C921D9EF2290090DA35 /* AppDelegate.swift */,
 				65A56C941D9EF2290090DA35 /* ViewController.swift */,
 				65A56C961D9EF2290090DA35 /* Main.storyboard */,
@@ -115,6 +120,7 @@
 			children = (
 				65A56CAA1D9EF2290090DA35 /* RunTests.swift */,
 				65A56CAC1D9EF2290090DA35 /* Info.plist */,
+				65A56CC61D9EF5670090DA35 /* TestBDCoreDataStack.swift */,
 			);
 			path = RunTests;
 			sourceTree = "<group>";
@@ -127,6 +133,14 @@
 			);
 			path = RunUITests;
 			sourceTree = "<group>";
+		};
+		65A56CC31D9EF2610090DA35 /* BDLib */ = {
+			isa = PBXGroup;
+			children = (
+				65A56CC41D9EF2700090DA35 /* BDCoreDataStack.swift */,
+			);
+			path = BDLib;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -265,6 +279,7 @@
 				65A56C951D9EF2290090DA35 /* ViewController.swift in Sources */,
 				65A56C931D9EF2290090DA35 /* AppDelegate.swift in Sources */,
 				65A56C9B1D9EF2290090DA35 /* Run.xcdatamodeld in Sources */,
+				65A56CC51D9EF2700090DA35 /* BDCoreDataStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65A56CAB1D9EF2290090DA35 /* RunTests.swift in Sources */,
+				65A56CC71D9EF5670090DA35 /* TestBDCoreDataStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,7 +375,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -402,7 +418,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
