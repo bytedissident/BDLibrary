@@ -12,7 +12,7 @@ import CoreData
 class BDCoreDataStack{
 
     //SET MODEL NAME: Changed from default
-    var modelName:String!
+    var modelName:String = ""
     
     init(modelName:String) {
         self.modelName = modelName
@@ -32,8 +32,9 @@ class BDCoreDataStack{
         
         let coordinator = NSPersistentStoreCoordinator(
             managedObjectModel: self.managedObjectModel)
-        
-        let url = self.applicationDocumentsDirectory.appendingPathComponent("Run.sqlite")
+        var file = self.modelName
+        file += ".sqlite"
+        let url = self.applicationDocumentsDirectory.appendingPathComponent(file)
         
         do {
             try coordinator.addPersistentStore(
