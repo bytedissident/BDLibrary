@@ -1,6 +1,6 @@
 //
 //  BDDataManager.swift
-//  Run
+//  Generic data manager. Performs saves in private context (bg), fetchs
 //
 //  Created by derek lee bronston on 9/30/16.
 //  Copyright © 2016 Bytedissident. All rights reserved.
