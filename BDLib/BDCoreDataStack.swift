@@ -19,7 +19,7 @@ class BDCoreDataStack{
     }
     
     lazy var applicationDocumentsDirectory: NSURL = {
-        let url = FileManager.default.urls(for: .documentationDirectory, in: .userDomainMask);
+        let url = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         return url[url.count - 1] as NSURL
     }()
     

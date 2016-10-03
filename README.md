@@ -1,2 +1,3 @@
 # BDLibrary
-Swift 3.0 CoreData Stack, backwards compatible to iOS 9 
+A set of components for Swift 3.0
+Swift 3.0 backwards compatible to iOS 9 

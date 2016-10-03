@@ -17,6 +17,8 @@
 		65A56CB61D9EF2290090DA35 /* RunUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A56CB51D9EF2290090DA35 /* RunUITests.swift */; };
 		65A56CC51D9EF2700090DA35 /* BDCoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A56CC41D9EF2700090DA35 /* BDCoreDataStack.swift */; };
 		65A56CC71D9EF5670090DA35 /* TestBDCoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A56CC61D9EF5670090DA35 /* TestBDCoreDataStack.swift */; };
+		65A56CC91D9F08580090DA35 /* BDDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A56CC81D9F08580090DA35 /* BDDataManager.swift */; };
+		65DEA35E1DA2D3AB0064DDF6 /* TestBDDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DEA35D1DA2D3AB0064DDF6 /* TestBDDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		65A56CB71D9EF2290090DA35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65A56CC41D9EF2700090DA35 /* BDCoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BDCoreDataStack.swift; sourceTree = "<group>"; };
 		65A56CC61D9EF5670090DA35 /* TestBDCoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestBDCoreDataStack.swift; sourceTree = "<group>"; };
+		65A56CC81D9F08580090DA35 /* BDDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BDDataManager.swift; sourceTree = "<group>"; };
+		65DEA35D1DA2D3AB0064DDF6 /* TestBDDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestBDDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +125,7 @@
 				65A56CAA1D9EF2290090DA35 /* RunTests.swift */,
 				65A56CAC1D9EF2290090DA35 /* Info.plist */,
 				65A56CC61D9EF5670090DA35 /* TestBDCoreDataStack.swift */,
+				65DEA35D1DA2D3AB0064DDF6 /* TestBDDataManager.swift */,
 			);
 			path = RunTests;
 			sourceTree = "<group>";
@@ -138,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				65A56CC41D9EF2700090DA35 /* BDCoreDataStack.swift */,
+				65A56CC81D9F08580090DA35 /* BDDataManager.swift */,
 			);
 			path = BDLib;
 			sourceTree = SOURCE_ROOT;
@@ -277,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65A56C951D9EF2290090DA35 /* ViewController.swift in Sources */,
+				65A56CC91D9F08580090DA35 /* BDDataManager.swift in Sources */,
 				65A56C931D9EF2290090DA35 /* AppDelegate.swift in Sources */,
 				65A56C9B1D9EF2290090DA35 /* Run.xcdatamodeld in Sources */,
 				65A56CC51D9EF2700090DA35 /* BDCoreDataStack.swift in Sources */,
@@ -289,6 +296,7 @@
 			files = (
 				65A56CAB1D9EF2290090DA35 /* RunTests.swift in Sources */,
 				65A56CC71D9EF5670090DA35 /* TestBDCoreDataStack.swift in Sources */,
+				65DEA35E1DA2D3AB0064DDF6 /* TestBDDataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -523,6 +531,7 @@
 				65A56CBC1D9EF2290090DA35 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		65A56CBD1D9EF2290090DA35 /* Build configuration list for PBXNativeTarget "RunTests" */ = {
 			isa = XCConfigurationList;
@@ -531,6 +540,7 @@
 				65A56CBF1D9EF2290090DA35 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		65A56CC01D9EF2290090DA35 /* Build configuration list for PBXNativeTarget "RunUITests" */ = {
 			isa = XCConfigurationList;
@@ -539,6 +549,7 @@
 				65A56CC21D9EF2290090DA35 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
