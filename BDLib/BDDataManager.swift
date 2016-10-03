@@ -32,6 +32,7 @@ class BDDataManager {
         }
     }
     
+    //SAVE IN BACHGROUND
     func add(entity:String,object:AnyObject,key:String,complete:@escaping ()->Void,fail:@escaping()->Void){
     
         let privateContext = NSManagedObjectContext(concurrencyType: .privateQueueConcurrencyType)
