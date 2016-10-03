@@ -33,7 +33,7 @@ class BDCoreDataStack{
         let coordinator = NSPersistentStoreCoordinator(
             managedObjectModel: self.managedObjectModel)
         
-        let url = self.applicationDocumentsDirectory.appendingPathComponent("\(self.modelName).sqlite")
+        let url = self.applicationDocumentsDirectory.appendingPathComponent("Run.sqlite")
         
         do {
             try coordinator.addPersistentStore(

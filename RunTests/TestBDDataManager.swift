@@ -39,4 +39,10 @@ class TestBDDataManager: XCTestCase {
         
     }
     
+    func testFetch(){
+        sut.fetch(entity: "Test") { (res) in
+            XCTAssertTrue(res.count > 0,"Error with fetch");
+        }
+    }
+    
 }

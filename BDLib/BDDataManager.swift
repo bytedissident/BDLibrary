@@ -20,6 +20,17 @@ class BDDataManager {
         self.stack = BDCoreDataStack(modelName: modelName)
     }
     
+    func fetch(entity:String,complete:(_ results:[AnyObject])->Void){
+        let context = stack.context
+        let req:NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: entity);
+        var res = [AnyObject]();
+        do {
+            res =  try context.fetch(req)
+            complete(res);
+        }catch{
+        
+        }
+    }
     
     func add(entity:String,object:AnyObject,key:String,complete:@escaping ()->Void,fail:@escaping()->Void){
     
